@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400..900&display=swap');
+* {
+    font-family: "Source sans 3", serif;
+    font-weight: 320;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+main{
+    padding: none;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #fff;
+    padding: 10px;
+    color: #fff;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center; /* Center the logo */
+    align-items: center;
+    position: relative; 
+    
+}
+
+.logo {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Balsamiq sans';
+    font-weight: 500;
+    color: #ADBECE;
+    text-shadow: 1px 1px 2px #000000;
+}
+.logo i{
+    color: #7ab1a1;
+    font-size: 25px;
+}
+.user-info {
+    position: absolute;
+    right: 20px; /* Align to the right */
+    display: flex;
+    align-items: center;
+}
+#user-circle{
+    color: #ccc;
+    font-size: 25px;
+    margin-right: 7px;
+}
+.username {
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: 400;
+    color: #1177D1;
+}
+.username:hover {
+    color: #0f5fa4;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+    
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1177D1;
+   
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f8f9fa;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 150px;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.main-content {
+    display: flex;
+    
+    position: relative; /* Ensure relative positioning for child elements */
+}
+.top-container {
+    flex: 1.5;
+    border-right: 1px solid #ccc;
+    background: #3d6269;
+    max-height: 80vh; /* Set maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 15px;
+}
+.top-container h1 {
+    text-align: left;
+    background: transparent;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+}
+.top-container h1 i {
+    background: #FFD700;
+    padding: 20px;
+    margin-right: 5px;
+}
+
+.notes-container {
+    flex: 3;
+    padding: 0;
+    position: relative;
+    max-height: 80vh; /* Set maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border-bottom: 1px solid #ccc;
+}
+
+.notes-container h1{
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.note-form {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 0;
+    outline: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form input{
+    font-weight: 500;
+}
+.notes-buttons form button {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: 400;
+}
+#note-button{
+    background-color: transparent;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: 400;
+}
+#note-button:hover{
+    background: #efeeee;
+    
+}
+.icon-button{
+    text-decoration: none;
+}
+
+.notes {
+    display: flex;
+    flex-direction: column; /* Display notes vertically */
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.note-form-container {
+    flex: 1.3;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.note {
+    /*background-color: #3d6269;*/
+    margin: 10px 20px 10px 20px;
+    padding: 20px;
+    border-radius: 5px;
+    /*box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);*/
+    width: 90%; /* Full width for vertical alignment */
+    position: relative;
+    border: 1px solid #ccc;
+    
+}
+
+.note h2 {
+    margin-top: 0;
+    font-weight: 350;
+    font-size: 35px;
+    color: #3d6269;
+} 
+
+
+.note small {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 15px;
+}
+
+.note-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    gap: 15px;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px; /* Smaller size for icons */
+    color: #3d6269;
+    padding: 5px; /* Remove padding */
+    transition: .3s ease transform;
+}
+
+.icon-button:hover {
+    color: #283f43;
+    transform: translateY(-5px);
+}
+hr{
+    padding: 0;
+    margin: 0;
+    border: 1px thin #ccc;
+}
+
+textarea {
+    resize: none;
+    width: 300px;
+    height: 150px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+    background-color: #fff; /* Optional: Set background color for footer */
+    padding: 10px 0; /* Optional: Add padding */
+    border-top: 1px solid #ccc ;
+}
+footer a {
+    color: #000000;
+    
+    text-decoration: none;
+    
+}
+.note.selected {
+    background-color: #FFD700;
+}
+
+footer a:hover {
+    color: #0213ff;
+    text-decoration: underline;
+}
+.vertical-separator {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(50% - 1px); /* Center the separator */
+    width: 2px;
+    background-color: #ccc;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .note-form-container {
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+        margin-bottom: 20px;
+    }
+
+    .notes-container {
+        padding-left: 0;
+    }
+
+    .note {
+        width: 100%;
+    }
+
+    .vertical-separator {
+        display: none; /* Hide vertical separator on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .username {
+        font-size: 12px;
+    }
+
+    .dropbtn {
+        font-size: 12px;
+    }
+
+    .dropdown-content a {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    .note-form {
+        padding: 10px;
+    }
+
+    .note-form input, .note-form textarea, .note-form button {
+        padding: 8px;
+    }
+
+    .note {
+        padding: 10px;
+    }
+
+    .note h2 {
+        font-size: 18px;
+    }
+
+    .note small {
+        font-size: 12px;
+    }
+
+    .note-buttons {
+        gap: 10px;
+    }
+
+    .icon-button {
+        font-size: 12px;
+    }
+}

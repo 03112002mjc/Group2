@@ -1,0 +1,205 @@
+/* Add any additional styles you need for the admin dashboard here */
+body {
+    font-family: 'Source sans 3', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    font-weight: 320;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px;
+    color: #333;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1177D1;
+    text-shadow: 1px 1px 2px #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #7ab1a1;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+#user-circle {
+    color: #ccc;
+    font-size: 25px;
+    margin-right:15px;
+}
+.username {
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: 400;
+    color: #1177D1;
+}
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1177D1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f8f9fa;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 150px;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+nav {
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+.main-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.top-container {
+    background-color: #25313E;
+    padding: 20px;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.row-selector:hover {
+    background-color: #1f2933;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.actions a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #1177D1;
+}
+
+.actions a:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    color: #1177D1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.manage_notes{
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+.manage_notes h2{
+    padding-left: 10px;
+}
